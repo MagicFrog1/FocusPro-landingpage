@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con FocusPro - Formulario de contacto y información">
+    <title>Contacto - FocusPro</title>
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="index.html" class="logo-text" style="text-decoration: none; color: inherit;">FocusPro</a>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="index.html#features" class="nav__link">Características</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#premium" class="nav__link">Premium</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#download" class="nav__link">Descargar</a>
+                </li>
+            </ul>
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                    <span class="theme-toggle__icon">🌙</span>
+                </button>
+            </div>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="legal-page">
+        <div class="container">
+            <div class="legal-page__header">
+                <a href="index.html" class="legal-page__back">← Volver</a>
+                <h1 class="legal-page__title">Contacto</h1>
+                <p class="legal-page__subtitle">Estamos aquí para ayudarte</p>
+            </div>
+
+            <div class="legal-page__content">
+                <section class="legal-section">
+                    <h2 class="legal-section__title">Información de Contacto</h2>
+                    <div class="contact-info">
+                        <div class="contact-info__item">
+                            <h3 class="contact-info__label">Email de Soporte</h3>
+                            <a href="mailto:angeldcchp94@gmail.com" class="contact-info__value">angeldcchp94@gmail.com</a>
+                        </div>
+                        <div class="contact-info__item">
+                            <h3 class="contact-info__label">Tiempo de Respuesta</h3>
+                            <p class="contact-info__value">Máximo 30 días naturales</p>
+                        </div>
+                        <div class="contact-info__item">
+                            <h3 class="contact-info__label">Horario de Atención</h3>
+                            <p class="contact-info__value">Lunes a Viernes, 9:00 - 18:00 (CET)</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="legal-section">
+                    <h2 class="legal-section__title">Formulario de Contacto</h2>
+                    <p class="legal-section__text">
+                        Completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.
+                    </p>
+                    <form class="contact-form" id="contact-form">
+                        <div class="contact-form__group">
+                            <label for="name" class="contact-form__label">Nombre *</label>
+                            <input type="text" id="name" name="name" class="contact-form__input" required>
+                        </div>
+                        <div class="contact-form__group">
+                            <label for="email" class="contact-form__label">Email *</label>
+                            <input type="email" id="email" name="email" class="contact-form__input" required>
+                        </div>
+                        <div class="contact-form__group">
+                            <label for="subject" class="contact-form__label">Asunto *</label>
+                            <select id="subject" name="subject" class="contact-form__input" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="support">Soporte Técnico</option>
+                                <option value="premium">Consulta sobre Premium</option>
+                                <option value="privacy">Privacidad y Datos</option>
+                                <option value="legal">Consulta Legal</option>
+                                <option value="feedback">Sugerencia o Feedback</option>
+                                <option value="other">Otro</option>
+                            </select>
+                        </div>
+                        <div class="contact-form__group">
+                            <label for="message" class="contact-form__label">Mensaje *</label>
+                            <textarea id="message" name="message" class="contact-form__textarea" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--large contact-form__submit">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </section>
+
+                <section class="legal-section">
+                    <h2 class="legal-section__title">Tipos de Consultas</h2>
+                    <div class="contact-types">
+                        <div class="contact-type">
+                            <h3 class="contact-type__title">Soporte Técnico</h3>
+                            <p class="contact-type__text">
+                                Si tienes problemas técnicos con la aplicación, errores o bugs, 
+                                por favor incluye detalles sobre tu dispositivo y versión del sistema operativo.
+                            </p>
+                        </div>
+                        <div class="contact-type">
+                            <h3 class="contact-type__title">Consulta sobre Premium</h3>
+                            <p class="contact-type__text">
+                                Para preguntas sobre suscripciones, cancelaciones, reembolsos o funciones Premium.
+                            </p>
+                        </div>
+                        <div class="contact-type">
+                            <h3 class="contact-type__title">Privacidad y Datos</h3>
+                            <p class="contact-type__text">
+                                Para ejercer tus derechos sobre tus datos personales (acceso, rectificación, 
+                                supresión, etc.) según el RGPD.
+                            </p>
+                        </div>
+                        <div class="contact-type">
+                            <h3 class="contact-type__title">Consulta Legal</h3>
+                            <p class="contact-type__text">
+                                Para consultas sobre términos y condiciones, reclamaciones o asuntos legales.
+                            </p>
+                        </div>
+                        <div class="contact-type">
+                            <h3 class="contact-type__title">Sugerencia o Feedback</h3>
+                            <p class="contact-type__text">
+                                Comparte tus ideas, sugerencias o comentarios para mejorar FocusPro.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="legal-section">
+                    <h2 class="legal-section__title">Información del Desarrollador</h2>
+                    <div class="developer-info">
+                        <p class="legal-section__text">
+                            <strong>Desarrollador:</strong> Angel<br>
+                            <strong>País:</strong> España<br>
+                            <strong>Email:</strong> <a href="mailto:angeldcchp94@gmail.com">angeldcchp94@gmail.com</a>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="legal-section">
+                    <h2 class="legal-section__title">Enlaces Rápidos</h2>
+                    <ul class="legal-list">
+                        <li><a href="support.html">Centro de Soporte</a></li>
+                        <li><a href="privacy.html">Política de Privacidad</a></li>
+                        <li><a href="terms.html">Términos y Condiciones</a></li>
+                        <li><a href="index.html#download">Descargar FocusPro</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <span class="logo-text">FocusPro</span>
+                    <p class="footer__tagline">La App de Enfoque que Realmente Funciona</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Legal</h4>
+                        <ul class="footer__list">
+                            <li><a href="privacy.html">Privacidad</a></li>
+                            <li><a href="terms.html">Términos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Soporte</h4>
+                        <ul class="footer__list">
+                            <li><a href="support.html">Soporte</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2024 FocusPro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/script.js"></script>
+    <script>
+        // Manejo del formulario de contacto
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const subject = formData.get('subject');
+            const email = formData.get('email');
+            const name = formData.get('name');
+            const message = formData.get('message');
+            
+            // Crear mailto link
+            const subjectMap = {
+                'support': 'Soporte Técnico',
+                'premium': 'Consulta sobre Premium',
+                'privacy': 'Privacidad y Datos',
+                'legal': 'Consulta Legal',
+                'feedback': 'Sugerencia o Feedback',
+                'other': 'Consulta'
+            };
+            
+            const emailSubject = encodeURIComponent(subjectMap[subject] || 'Consulta');
+            const emailBody = encodeURIComponent(`Nombre: ${name}\n\nMensaje:\n${message}`);
+            const mailtoLink = `mailto:angeldcchp94@gmail.com?subject=${emailSubject}&body=${emailBody}`;
+            
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+</html>
+

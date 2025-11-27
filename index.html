@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FocusPro: La App de Enfoque que Realmente Funciona. Transforma tu productividad con disciplina real, bloquea distracciones y alcanza tus metas.">
+    <meta name="keywords" content="productividad, enfoque, app móvil, temporizador, bloqueo de apps, disciplina">
+    <meta property="og:title" content="FocusPro - La App de Enfoque que Realmente Funciona">
+    <meta property="og:description" content="Transforma tu productividad con disciplina real. Bloquea distracciones, analiza tu rendimiento y alcanza tus metas.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://focuspro.app/og-image.jpg">
+    <title>FocusPro - La App de Enfoque que Realmente Funciona</title>
+    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <span class="logo-text">FocusPro</span>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#features" class="nav__link">Características</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#premium" class="nav__link">Premium</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#download" class="nav__link">Descargar</a>
+                </li>
+            </ul>
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                    <span class="theme-toggle__icon">🌙</span>
+                </button>
+                <a href="#download" class="btn btn--primary btn--small">Descargar Ahora</a>
+            </div>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    FocusPro: La App de Enfoque que Realmente Funciona
+                </h1>
+                <p class="hero__subtitle">
+                    Transforma tu productividad con disciplina real. Bloquea distracciones, analiza tu rendimiento y alcanza tus metas.
+                </p>
+                <div class="hero__cta">
+                    <a href="#download" class="btn btn--primary btn--large">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 0L12.5 6.5L19 7L14 11.5L15.5 18L10 14.5L4.5 18L6 11.5L1 7L7.5 6.5L10 0Z" fill="currentColor"/>
+                        </svg>
+                        Descargar para iOS
+                    </a>
+                    <a href="#features" class="btn btn--secondary btn--large">
+                        Ver Características
+                    </a>
+                </div>
+            </div>
+            <div class="hero__image">
+                <div class="phone-mockup">
+                    <div class="phone-mockup__screen">
+                        <div class="mockup-content">
+                            <div class="mockup-header"></div>
+                            <div class="mockup-body">
+                                <div class="mockup-timer">25:00</div>
+                                <div class="mockup-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">Sesión</span>
+                                        <span class="stat-value">Deep Focus</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEMA / PAIN POINTS -->
+    <section class="problem" id="problem">
+        <div class="container">
+            <h2 class="section-title">¿Te distraes fácilmente?</h2>
+            <div class="problem__grid">
+                <div class="problem__card">
+                    <div class="problem__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3 class="problem__title">El tiempo se te escapa</h3>
+                    <p class="problem__text">Sin lograr objetivos concretos al final del día.</p>
+                </div>
+                <div class="problem__card">
+                    <div class="problem__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                        </svg>
+                    </div>
+                    <h3 class="problem__title">Distracciones constantes</h3>
+                    <p class="problem__text">Las notificaciones y apps te impiden concentrarte.</p>
+                </div>
+                <div class="problem__card">
+                    <div class="problem__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="problem__title">Falta de disciplina</h3>
+                    <p class="problem__text">No tienes la fuerza de voluntad para mantener el enfoque.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUCIÓN - CARACTERÍSTICAS PRINCIPALES -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">FocusPro: Más que un Temporizador</h2>
+            <p class="section-subtitle">
+                No es solo un temporizador bonito. FocusPro combina tecnología inteligente, consecuencias reales y datos accionables para ayudarte a mantener el enfoque cuando tu fuerza de voluntad no es suficiente.
+            </p>
+            <div class="features__grid">
+                <!-- Característica 1 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">Disciplina Real</h3>
+                    <p class="feature-card__description">
+                        Sistema de compromiso con consecuencias. Si rompes tu sesión, el temporizador se reinicia. Modo Estricto disponible.
+                    </p>
+                    <div class="feature-card__visual">
+                        <div class="mockup-mini">
+                            <div class="mockup-mini__content">
+                                <div class="mockup-mini__header">Contrato de Enfoque</div>
+                                <div class="mockup-mini__body">Modo Estricto: ON</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Característica 2 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="9" y1="3" x2="9" y2="21"/>
+                            <line x1="3" y1="9" x2="21" y2="9"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">Cero Distracciones</h3>
+                    <p class="feature-card__description">
+                        Bloquea apps específicas durante sesiones. No Molestar Inteligente con filtros personalizados y excepciones VIP.
+                    </p>
+                    <div class="feature-card__visual">
+                        <div class="mockup-mini">
+                            <div class="mockup-mini__content">
+                                <div class="mockup-mini__header">Apps Bloqueadas</div>
+                                <div class="mockup-mini__body">12 apps bloqueadas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Característica 3 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 6 13.5 15.5 8.5 10.5 2 17"/>
+                            <polyline points="16 6 22 6 22 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">Datos que Importan</h3>
+                    <p class="feature-card__description">
+                        Visualiza tu productividad con gráficos detallados, identifica horas más productivas, rastrea tu Score de Focus.
+                    </p>
+                    <div class="feature-card__visual">
+                        <div class="mockup-mini">
+                            <div class="mockup-mini__content">
+                                <div class="mockup-mini__header">Analíticas</div>
+                                <div class="mockup-mini__body">Score: 8.5/10</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Característica 4 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">Focus Adaptativo</h3>
+                    <p class="feature-card__description">
+                        Modo Estándar, Deep Focus y Custom Focus. Crea perfiles personalizados según tus necesidades.
+                    </p>
+                    <div class="feature-card__visual">
+                        <div class="mockup-mini">
+                            <div class="mockup-mini__content">
+                                <div class="mockup-mini__header">Modos</div>
+                                <div class="mockup-mini__body">Deep Focus</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Característica 5 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">IA que Aprende</h3>
+                    <p class="feature-card__description">
+                        Analiza tus patrones de productividad y sugiere horarios óptimos. El sistema aprende de tu comportamiento.
+                    </p>
+                    <div class="feature-card__visual">
+                        <div class="mockup-mini">
+                            <div class="mockup-mini__content">
+                                <div class="mockup-mini__header">Planificador IA</div>
+                                <div class="mockup-mini__body">Hora óptima: 9:00 AM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Característica 6 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">Siempre Enfocado</h3>
+                    <p class="feature-card__description">
+                        Alertas cada 2 minutos si sales de la app. Redirección automática para mantener tu concentración.
+                    </p>
+                    <div class="feature-card__visual">
+                        <div class="mockup-mini">
+                            <div class="mockup-mini__content">
+                                <div class="mockup-mini__header">Alertas</div>
+                                <div class="mockup-mini__body">Cada 2 min</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PREMIUM -->
+    <section class="premium" id="premium">
+        <div class="premium__bg-gradient"></div>
+        <div class="premium__particles"></div>
+        <div class="container">
+            <div class="premium__card">
+                <div class="premium__glow"></div>
+                <div class="premium__badge">
+                    <span class="badge__icon">✨</span>
+                    <span class="badge__text">Recomendado</span>
+                    <span class="badge__pulse"></span>
+                </div>
+                <div class="premium__header">
+                    <h2 class="premium__title">Desbloquea Todo el Potencial con FocusPro Premium</h2>
+                    <p class="premium__subtitle">Accede a todas las funciones avanzadas y transforma tu productividad</p>
+                </div>
+                <div class="premium__content">
+                    <ul class="premium__list">
+                        <li class="premium__item" data-index="0">
+                            <div class="premium__item-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <div class="premium__item-content">
+                                <strong>Contrato de Enfoque Completo</strong>
+                                <span>Modo Estricto con consecuencias reales</span>
+                            </div>
+                        </li>
+                        <li class="premium__item" data-index="1">
+                            <div class="premium__item-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <div class="premium__item-content">
+                                <strong>Bloqueo de Apps Ilimitado</strong>
+                                <span>Sin restricciones en el número de apps</span>
+                            </div>
+                        </li>
+                        <li class="premium__item" data-index="2">
+                            <div class="premium__item-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <div class="premium__item-content">
+                                <strong>Analíticas Avanzadas</strong>
+                                <span>Insights detallados y métricas profundas</span>
+                            </div>
+                        </li>
+                        <li class="premium__item" data-index="3">
+                            <div class="premium__item-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <div class="premium__item-content">
+                                <strong>Modos Avanzados</strong>
+                                <span>Deep Focus y Custom Focus personalizados</span>
+                            </div>
+                        </li>
+                        <li class="premium__item" data-index="4">
+                            <div class="premium__item-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <div class="premium__item-content">
+                                <strong>No Molestar Inteligente</strong>
+                                <span>Filtros avanzados y excepciones VIP</span>
+                            </div>
+                        </li>
+                        <li class="premium__item" data-index="5">
+                            <div class="premium__item-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <div class="premium__item-content">
+                                <strong>Score de Focus</strong>
+                                <span>Métricas de rendimiento en tiempo real</span>
+                            </div>
+                        </li>
+                        <li class="premium__item" data-index="6">
+                            <div class="premium__item-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <div class="premium__item-content">
+                                <strong>Planificador IA</strong>
+                                <span>Análisis inteligente de patrones</span>
+                            </div>
+                        </li>
+                        <li class="premium__item" data-index="7">
+                            <div class="premium__item-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <div class="premium__item-content">
+                                <strong>Sesiones Ilimitadas</strong>
+                                <span>Sin restricciones ni límites</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="premium__cta">
+                    <a href="#download" class="btn btn--premium btn--large">
+                        <span class="btn__sparkle">✨</span>
+                        Actualizar a Premium
+                        <span class="btn__arrow">→</span>
+                    </a>
+                    <p class="premium__guarantee">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                        Garantía de satisfacción 100% o tu dinero de vuelta
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonials" id="testimonials">
+        <div class="testimonials__bg-decoration"></div>
+        <div class="container">
+            <div class="testimonials__header">
+                <h2 class="section-title">Transformando la Productividad de Miles</h2>
+                <p class="testimonials__subtitle">Únete a miles de usuarios que ya están alcanzando sus metas</p>
+                <div class="testimonials__stats">
+                    <div class="stat-badge">
+                        <span class="stat-badge__number">10K+</span>
+                        <span class="stat-badge__label">Usuarios Activos</span>
+                    </div>
+                    <div class="stat-badge">
+                        <span class="stat-badge__number">4.9</span>
+                        <span class="stat-badge__label">⭐ Rating</span>
+                    </div>
+                    <div class="stat-badge">
+                        <span class="stat-badge__number">98%</span>
+                        <span class="stat-badge__label">Satisfacción</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__grid">
+                <div class="testimonial-card" data-delay="0">
+                    <div class="testimonial-card__glow"></div>
+                    <div class="testimonial-card__header">
+                        <div class="testimonial-card__avatar">
+                            <div class="avatar__gradient"></div>
+                            <span>MC</span>
+                        </div>
+                        <div class="testimonial-card__verified">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <path d="M9 12l2 2 4-4"/>
+                            </svg>
+                            Verificado
+                        </div>
+                    </div>
+                    <div class="testimonial-card__rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="testimonial-card__quote">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" opacity="0.1">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "FocusPro cambió completamente mi forma de trabajar. El Modo Estricto me ayuda a mantener la disciplina cuando más lo necesito."
+                    </p>
+                    <div class="testimonial-card__author">
+                        <strong>María C.</strong>
+                        <span>Estudiante de Medicina</span>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-delay="100">
+                    <div class="testimonial-card__glow"></div>
+                    <div class="testimonial-card__header">
+                        <div class="testimonial-card__avatar">
+                            <div class="avatar__gradient"></div>
+                            <span>JL</span>
+                        </div>
+                        <div class="testimonial-card__verified">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <path d="M9 12l2 2 4-4"/>
+                            </svg>
+                            Verificado
+                        </div>
+                    </div>
+                    <div class="testimonial-card__rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="testimonial-card__quote">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" opacity="0.1">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "Las analíticas me muestran exactamente cuándo soy más productivo. La IA del planificador es increíblemente precisa."
+                    </p>
+                    <div class="testimonial-card__author">
+                        <strong>Juan L.</strong>
+                        <span>Desarrollador Freelance</span>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-delay="200">
+                    <div class="testimonial-card__glow"></div>
+                    <div class="testimonial-card__header">
+                        <div class="testimonial-card__avatar">
+                            <div class="avatar__gradient"></div>
+                            <span>AS</span>
+                        </div>
+                        <div class="testimonial-card__verified">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <path d="M9 12l2 2 4-4"/>
+                            </svg>
+                            Verificado
+                        </div>
+                    </div>
+                    <div class="testimonial-card__rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="testimonial-card__quote">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" opacity="0.1">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "Finalmente una app que realmente funciona. El bloqueo de apps y las alertas inteligentes me mantienen enfocado todo el día."
+                    </p>
+                    <div class="testimonial-card__author">
+                        <strong>Ana S.</strong>
+                        <span>Ejecutiva de Marketing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARA QUIÉN ES -->
+    <section class="audience" id="audience">
+        <div class="container">
+            <h2 class="section-title">Perfecto Para</h2>
+            <div class="audience__grid">
+                <div class="audience-card">
+                    <div class="audience-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="audience-card__title">Estudiantes</h3>
+                    <p class="audience-card__description">
+                        Mantén el enfoque durante tus sesiones de estudio. Bloquea redes sociales y alcanza tus metas académicas.
+                    </p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                    </div>
+                    <h3 class="audience-card__title">Profesionales</h3>
+                    <p class="audience-card__description">
+                        Maximiza tu productividad en el trabajo. Analiza tus patrones y optimiza tu rendimiento diario.
+                    </p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3 class="audience-card__title">Freelancers</h3>
+                    <p class="audience-card__description">
+                        Gestiona tu tiempo de forma independiente. El planificador IA te ayuda a encontrar tus horas más productivas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final" id="download">
+        <div class="container">
+            <h2 class="cta-final__title">Comienza a Transformar tu Productividad Hoy</h2>
+            <p class="cta-final__subtitle">
+                Descarga FocusPro y experimenta la diferencia. La versión gratuita incluye todas las funciones esenciales. Actualiza a Premium para desbloquear todo el potencial.
+            </p>
+            <div class="cta-final__buttons">
+                <a href="#" class="btn btn--download btn--app-store" aria-label="Descargar en App Store">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.69-2.46.5-3.38-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                    </svg>
+                    <div>
+                        <span class="btn__small-text">Descargar en</span>
+                        <span class="btn__large-text">App Store</span>
+                    </div>
+                </a>
+                <a href="#" class="btn btn--download btn--play-store" aria-label="Descargar en Google Play">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.19,14.5L15.12,12.42L17.19,10.33L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                    </svg>
+                    <div>
+                        <span class="btn__small-text">Descargar en</span>
+                        <span class="btn__large-text">Google Play</span>
+                    </div>
+                </a>
+            </div>
+            <p class="cta-final__note">
+                Versión gratuita disponible. Actualiza a Premium cuando quieras.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <span class="logo-text">FocusPro</span>
+                    <p class="footer__tagline">La App de Enfoque que Realmente Funciona</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Producto</h4>
+                        <ul class="footer__list">
+                            <li><a href="#features">Características</a></li>
+                            <li><a href="#premium">Premium</a></li>
+                            <li><a href="#download">Descargar</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Legal</h4>
+                        <ul class="footer__list">
+                            <li><a href="privacy.html">Privacidad</a></li>
+                            <li><a href="terms.html">Términos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Soporte</h4>
+                        <ul class="footer__list">
+                            <li><a href="support.html">Soporte</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2024 FocusPro. Todos los derechos reservados.</p>
+                <p class="footer__email">Email: <a href="mailto:angeldcchp94@gmail.com">angeldcchp94@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL DE BIENVENIDA -->
+    <div class="welcome-modal" id="welcome-modal">
+        <div class="welcome-modal__overlay"></div>
+        <div class="welcome-modal__content">
+            <button class="welcome-modal__close" id="modal-close" aria-label="Cerrar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="welcome-modal__header">
+                <h3 class="welcome-modal__title">¿Cómo funciona FocusPro?</h3>
+            </div>
+            <div class="welcome-modal__body">
+                <p class="welcome-modal__text">
+                    FocusPro te ayuda a mantener el enfoque mediante un sistema de compromiso con consecuencias reales.
+                </p>
+                <div class="welcome-modal__steps">
+                    <div class="welcome-step">
+                        <div class="welcome-step__number">1</div>
+                        <div class="welcome-step__content">
+                            <strong>Establece tu sesión</strong>
+                            <span>Elige el tiempo y modo de enfoque</span>
+                        </div>
+                    </div>
+                    <div class="welcome-step">
+                        <div class="welcome-step__number">2</div>
+                        <div class="welcome-step__content">
+                            <strong>Bloquea distracciones</strong>
+                            <span>Las apps se bloquean automáticamente</span>
+                        </div>
+                    </div>
+                    <div class="welcome-step">
+                        <div class="welcome-step__number">3</div>
+                        <div class="welcome-step__content">
+                            <strong>Mantén el enfoque</strong>
+                            <span>Si sales de la app, el temporizador se reinicia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome-modal__footer">
+                <a href="#download" class="btn btn--primary btn--large welcome-modal__cta">
+                    Comenzar Ahora
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/src/script.js"></script>
+</body>
+</html>
+

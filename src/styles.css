@@ -389,6 +389,18 @@ h3 {
   animation: fadeInRight 1s ease;
 }
 
+.hero__screenshot {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 64px var(--shadow-strong);
+  transition: transform 0.3s ease;
+}
+
+.hero__screenshot:hover {
+  transform: scale(1.02);
+}
+
 .phone-mockup-group {
   display: flex;
   justify-content: center;
@@ -1530,6 +1542,11 @@ h3 {
   .phone-mockup-pair {
     flex-direction: column;
     gap: var(--spacing-md);
+  }
+  
+  .hero__screenshot {
+    max-width: 90%;
+    height: auto;
   }
   
   .hero__image .phone-mockup-pair {

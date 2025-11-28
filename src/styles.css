@@ -402,6 +402,11 @@ h3 {
   justify-content: center;
 }
 
+/* Hero con una sola imagen */
+.hero__image .phone-mockup-group {
+  width: 100%;
+}
+
 .phone-mockup {
   width: 320px;
   height: 640px;

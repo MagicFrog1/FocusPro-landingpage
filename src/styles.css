@@ -343,9 +343,9 @@ h3 {
   align-items: center;
   padding-top: 80px;
   padding-bottom: var(--spacing-3xl);
-  background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  background: #000000;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero__container {
@@ -390,11 +390,16 @@ h3 {
 }
 
 .hero__screenshot {
-  max-width: 100%;
+  max-width: 400px;
+  width: 100%;
   height: auto;
+  display: block;
+  visibility: visible;
+  opacity: 1;
   border-radius: var(--radius-lg);
   box-shadow: 0 24px 64px var(--shadow-strong);
   transition: transform 0.3s ease;
+  object-fit: contain;
 }
 
 .hero__screenshot:hover {
@@ -1545,8 +1550,12 @@ h3 {
   }
   
   .hero__screenshot {
-    max-width: 90%;
+    max-width: 300px;
+    width: 100%;
     height: auto;
+    display: block;
+    visibility: visible;
+    opacity: 1;
   }
   
   .hero__image .phone-mockup-pair {

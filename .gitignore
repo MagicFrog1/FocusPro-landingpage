@@ -29,3 +29,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Images (mantener estructura pero permitir imágenes)
+# !images/*.png
+# !images/*.jpg
+# !images/*.jpeg
+# !images/*.webp
+
